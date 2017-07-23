@@ -35,6 +35,12 @@ $ cd /path/to/the/project
 $ npm ls -l
 # 更新全局组件
 $ npm update -g
-# 更新项目内的组件 
+# 更新项目内的组件
 $ cd /path/to/the/project
 $ npm update
+# npm切换淘宝镜像方法
+$ npm --registry https://registry.npm.taobao.org install express
+# 永久切换
+$ npm config set registry https://registry.npm.taobao.org
+# 验证是否成功
+npm config get registry
