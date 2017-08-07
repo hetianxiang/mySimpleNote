@@ -5,3 +5,4 @@ Ajax：async javascript and xml 异步的JS和XML
 AJAX四步:
 
 ->创建一个AJAX对象(下面的这种写法在IE6及更低版本的浏览器中不支持)
+var xhr=new XMLHttpRequest;
