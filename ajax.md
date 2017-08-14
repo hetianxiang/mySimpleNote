@@ -6,3 +6,10 @@ AJAX四步:
 
 ->创建一个AJAX对象(下面的这种写法在IE6及更低版本的浏览器中不支持)
 var xhr=new XMLHttpRequest;
+->发送前的基本信息配置:
+
+配置请求方式(GET、POST、PUT、DELETE、HEAD...)
+打开一个URL地址(配置向哪一个服务器地址发送请求)
+同步还是异步(true代表异步 false代表同步 默认是true)
+[username]向服务器提供请求的用户名
+[userpass]向服务器提供请求的用户密码 这两个值一般都不写，只有服务器做了安全的限制，只允许特定的用户访问的话，我们才传递过去 xhr.open("get","/data.txt",false,[username],[userpass]);
